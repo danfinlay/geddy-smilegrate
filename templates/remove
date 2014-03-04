@@ -1,0 +1,24 @@
+var {{migrationName}} = function () {
+  this.up = function (next) {
+    this.removeColumn('{{tableName}}', '{{columnName}}', function(err, data){
+      if(err){
+        throw err;
+      }else{
+        next();
+      }
+    }); 
+  };
+
+  this.down = function (next) {
+    this.addColumn('{{tableName}}', '{{columnName}}', '{{dataType}}',  function(err, data){
+      if(err){
+        throw err;
+      }else{
+
+        next();
+      }
+    });
+  };
+};
+
+exports.{{migrationName}} = {{migrationName}};

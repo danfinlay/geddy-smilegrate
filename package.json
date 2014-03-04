@@ -1,0 +1,18 @@
+{
+  "name": "smilegrate",
+  "preferGlobal": true,
+  "bin": {
+    "smilegrate": "./index.js"
+  },
+  "version": "0.0.0",
+  "description": "A utility for making it easier to migrate databases in geddy.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Finlay",
+  "license": "ISC",
+  "dependencies": {
+    "mustache": "~0.8.1"
+  }
+}
