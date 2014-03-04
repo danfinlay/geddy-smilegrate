@@ -73,7 +73,7 @@ function editFile(){
 
 function runMigration(){
   console.log("Running migration");
-  // var child = exec('geddy jake db:migrate');
+  var child = exec('geddy jake db:migrate');
 }
 
 function san(string){
