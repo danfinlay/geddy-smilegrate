@@ -36,12 +36,11 @@ var columnName = process.argv[5];
 
 var migrationName = san(process.argv[3]) + san(process.argv[2]) + san(process.argv[5]) + san(process.argv[4]);
 
-var camelName = migrationName[0].toUpperCase() + migrationName.slice(1);
 var templateFill = {
   tableName: modelName,
   dataType: dataType,
   columnName: columnName,
-  migrationName: camelName
+  migrationName: migrationName
 }
 
 generateMigration(function(err, stdout, stderr){
@@ -82,7 +81,12 @@ function san(string){
   for(var i = 0; i < string.length; i++){
     if(string[i]!== '-'
       && string[i] !== '_'){
-      result+=string[i];
+      // Camelcase:
+      if(i === 0){
+        result += string[i].toUpperCase();
+      }else{
+        result+=string[i]; 
+      }
     }
   }
   return result;
