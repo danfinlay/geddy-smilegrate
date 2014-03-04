@@ -3,13 +3,13 @@
 
 Smilegrate is a simple command line utility for running migrations in Geddy.js.
 
-It's used for simple migrations, like adding or removing a single column from a table.  Such a migration might be performed to add a table like so:
+It's used for simple migrations, like adding or removing a single column from a table.  Such a migration might be performed to add a "name" string to the user table like so:
 
 ```
 $ smilegrate add user string name
 ```
 
-To add a row "name" of type "string" to the table "user".  Or, to remove the same row:
+Or, to remove the same row:
 
 ```
 $ smilegrate remove user string name
