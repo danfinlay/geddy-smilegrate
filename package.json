@@ -5,7 +5,7 @@
     "smilegrate": "./index.js"
   },
   "version": "0.1.2",
-	"repository":{
+	"repository":
 		{
 			"type:	"git",
 			"url":  "https://github.com/flyswatter/geddy-smilegrate"
