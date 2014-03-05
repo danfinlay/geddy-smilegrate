@@ -4,7 +4,7 @@
   "bin": {
     "smilegrate": "./index.js"
   },
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A utility for making it easier to migrate databases in geddy.js",
   "main": "index.js",
   "scripts": {
