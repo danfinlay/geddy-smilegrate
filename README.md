@@ -1,9 +1,14 @@
 # Smilegrate
 ### Stop frowning during migrations!
 
-Smilegrate is a simple command line utility for running migrations in Geddy.js.
+Smilegrate is a simple command line utility for running migrations in the [Geddy.js](geddyjs.org) framework for Node.js.
 
-It's used for simple migrations, like adding or removing a single column from a table.  Such a migration might be performed to add a "name" string to the user table like so:
+Install is easy if you have Node and NPM installed:
+```
+npm i -g smilegrate
+```
+
+Smilegrate is for simple migrations, like adding or removing a single column from a table.  Such a migration might be performed to add a "name" string to the user table like so:
 
 ```
 $ smilegrate add user string name
