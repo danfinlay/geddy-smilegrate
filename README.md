@@ -19,8 +19,7 @@ Or, to remove the same row:
 ```
 $ smilegrate remove user string name
 ```
-
-Installation is a snap.  Just run `npm i -g smilegrate`.
+In these examples, "string" could be replaced with any datatype that [Model](https://github.com/geddy/model)(Geddy's ORM) supports.
 
 ## Under the hood
 
