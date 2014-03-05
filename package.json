@@ -5,11 +5,10 @@
     "smilegrate": "./index.js"
   },
   "version": "0.1.2",
-	"repository":
-	{
-		"type:	"git",
-		"url":  "https://github.com/flyswatter/geddy-smilegrate"
-	},
+  "repository": { 
+    "type" : "git",
+    "url" : "https://github.com/flyswatter/geddy-smilegrate"
+  },
   "description": "A utility for making it easier to migrate databases in geddy.js",
   "main": "index.js",
   "scripts": {
